@@ -1,0 +1,141 @@
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #222;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+
+.navigation ul {
+  display: flex;
+  gap: 20px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navigation ul li a:hover {
+  color: #ff4081;
+}
+
+/* Social Bar */
+.social-bar ul {
+  display: flex;
+  gap: 15px;
+}
+
+.social-bar img {
+  width: 25px;
+  height: 25px;
+  transition: transform 0.3s ease;
+}
+
+.social-bar img:hover {
+  transform: scale(1.2);
+}
+
+/* Home Section */
+.home {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 50px 50px;
+  background-color: #fff;
+}
+
+.home-img-container {
+  flex: 1;
+  overflow: hidden;
+}
+
+.home-img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.home-content {
+  flex: 1;
+  padding: 30px;
+  text-align: center;
+}
+
+.home-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.home-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.btn {
+  padding: 10px 25px;
+  font-size: 18px;
+  background-color: #ff4081;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e0356e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .home {
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+
+  .home-img {
+    max-height: 400px;
+  }
+
+  .home-content h1 {
+    font-size: 36px;
+  }
+
+  .home-content p {
+    font-size: 16px;
+  }
+}
